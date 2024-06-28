@@ -11,7 +11,7 @@
 
 ## What is this
 
-EmailSenderService is an application designed to emulate the sending of emails in a simplified way.It aims to offer a basic experience similar to that provided by large email companies, albeit on a much smaller scale and with an educational approach. This service is fully functional and handles specific errors, thus providing a solid basis for understanding the principles behind sending emails in modern applications.
+EmailSenderService is an application designed to emulate the sending of emails in a simplified way. It aims to provide a basic experience similar to that provided by large email companies, albeit on a much smaller scale and with an educational approach. This service is fully functional and handles specific errors, thus providing a solid foundation for understanding the principles that govern the sending of emails in modern applications.
 
 ## Things to bear in mind
 
@@ -21,15 +21,13 @@ EmailSenderService is an application designed to emulate the sending of emails i
 
 - The structure of the application is not based on any architecture, so you can use the architecture that you want, and you can modify the application to use the architecture that you want.
 
-- This application is not designed to send any kind of attachment, so you can send only text emails.
+- This application is not designed to send any kind of attachment, so you can send only text emails (For now).
 
 ## How use it?
 
 - First of all, this application does not have any kind of authentication, so you can use it without any problem and at your own risk.
 
-- The application needs to know the email address of the sender, to do that, you will need to
-  get in into the code, and modify one simple file, and this will be the appsettings.json, where
-  you can find the following code:
+- The application needs to know the email address of the sender, to do that, you will need to get in into the code, and modify one simple file, and this will be the appsettings.json, where you can find the following code:
 
 ```json
 {
