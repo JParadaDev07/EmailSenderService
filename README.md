@@ -109,12 +109,11 @@ POST "http://yourlocalhost"
 ```json
 {
   "to": "the email address of the recipient",
-  "subject": "the subject of the email",
-  "body": "the body of the email",
+  "message" : "This is the message that returns the application"
 }
 ```
 
-> Yes, returns exactly the same that the request body, but because the application is a simplified version, it is not necessary to return a more complex response.
+> The application only will return the email address of the recipient and a message that the email was sent successfully. 
 
 ### Error Response
 
@@ -130,7 +129,7 @@ POST "http://yourlocalhost"
 }
 ```
 
-> The structure of the error response is pulled from the ErrorOr Library of .NET and the beauty of this library is that it allows you to create a more complex error response, create your errorCodes, and create a more detailed error response. **If you want to see the syntax of the errors, you can navigate to the root of the project, look in the Entities folder and inside this folder you will find another folder, called Errors, inside this folder you can find the structure of the custom errors, their error codes and more**.
+> The structure of the error response is pulled from the ErrorOr Library, look the code of the creator over here: https://github.com/amantinband/error-or. The beauty of this library is that it allows you to create a more complex error response, create your errorCodes, and create a more detailed error responses. **If you want to see the syntax of the errors, you can navigate to the root of the project, look in the Entities folder and inside this folder you will find another folder, called Errors, inside this folder you can find the structure of the custom errors, their error codes and more**.
 
 > If you get into the link of the type field, you will find a more detailed explanation of the error.
 
