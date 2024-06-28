@@ -1,8 +1,10 @@
 @host = http://yourlocalhost
 
 POST {{host}}/api/send-email
+Content-Type: application/json
+
 {
-    "to": "",
-    "subject": "",
-    "body": ""
+    "to": "examplemail@mail.com",
+    "subject": "This is the subject of the email",
+    "body": "This is the body of the email"
 }
