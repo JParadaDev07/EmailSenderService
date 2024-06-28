@@ -1,0 +1,8 @@
+@host = http://yourhost.com
+
+POST {{host}}/api/send-email
+{
+    "to": "",
+    "subject": "",
+    "body": ""
+}
