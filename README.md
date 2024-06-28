@@ -1,7 +1,7 @@
 # EmailSenderService
 
 - [EmailSenderService](#emailsenderservice)
-  - [What is this?](#what-is-this?)
+  - [What is this?](#what-is-this)
     - [How to use it?](#how-to-use-it)
       - [Request](#request)
       - [Response](#response)
