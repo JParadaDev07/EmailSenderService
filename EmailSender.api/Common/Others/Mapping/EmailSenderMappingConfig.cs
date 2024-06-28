@@ -13,8 +13,7 @@ public class EmailSenderMappingConfig : IRegister
         config.NewConfig<EmailSenderRequest, EmailSenderCommand>();
         config.NewConfig<EmailSenderResult, EmailSenderResponse>()
             .Map(dest => dest.To, src => src.Email.To)
-            .Map(dest => dest.Subject, src => src.Email.Subject)
-            .Map(dest => dest.Body, src => src.Email.Body);
+            .Map(dest => dest.Message, src => src.Message);
 
     }
 }
