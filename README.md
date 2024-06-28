@@ -83,7 +83,7 @@ EmailSenderService is an application designed to emulate the sending of emails i
 * After you have configured the appsettings.json file, you will need to run the application, **The application is configured, to run without Swagger, so you will need to use Postman or any other tool to test the application.** fortunately, if your'e using Visual Studio Code, on the root of the project, you will find a folder called Requests, inside of this folder, you will find a file called EmailSenderRequest.http, that contain the necessary request to test the application, but you will need to chanche the host variable configured in the file, with the port that the application is running.
 
 ```js
-POST http://yourhost.com
+POST "http://yourlocalhost"
 ```
 
 ### Request
