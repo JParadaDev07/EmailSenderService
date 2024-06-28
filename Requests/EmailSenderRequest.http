@@ -1,4 +1,4 @@
-@host = http://yourhost.com
+@host = http://yourlocalhost
 
 POST {{host}}/api/send-email
 {
