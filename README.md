@@ -1,19 +1,29 @@
 # EmailSenderService
 
 - [EmailSenderService](#emailsenderservice)
-  - [What is this?](#what-is-this)
+  - [What is this?](#what-is-this?)
+  - [Things to bear in mind](#things-to-bear-in-mind)
     - [How to use it?](#how-to-use-it)
       - [Request](#request)
       - [Response](#response)
       - [Error Response](#error-response)
-    - [Things to bear in mind](#things-to-bear-in-mind)
       - [Final step](#final-step)
 
-## What is this?
+## What is this
 
 EmailSenderService is an application designed to emulate the sending of emails in a simplified way.It aims to offer a basic experience similar to that provided by large email companies, albeit on a much smaller scale and with an educational approach. This service is fully functional and handles specific errors, thus providing a solid basis for understanding the principles behind sending emails in modern applications.
 
-## How to use it?
+## Things to bear in mind
+
+- The application is designed to be a simplified version of a real email sender, so it does not have all the features that a real email sender has, but it has the basic features to understand how an email sender works.
+
+- If you want to modify the application, you can do it without any problem, the application is designed to be modified and to be used as a base for a more complex application.
+
+- The structure of the application is not based on any architecture, so you can use the architecture that you want, and you can modify the application to use the architecture that you want.
+
+- This application is not designed to send any kind of attachment, so you can send only text emails.
+
+## How use it?
 
 - First of all, this application does not have any kind of authentication, so you can use it without any problem and at your own risk.
 
@@ -78,16 +88,13 @@ POST http://yourhost.com
 
 ### Request
 
-**Note:** The attachment field is optional, so you can send an email without an attachment, if you want to send a file, you will have to use a different application, e.g. Postman..
-
 - The application has only one endpoint, and this is the /api/send-email, this endpoint receives a POST request, and the body of the request must be a JSON object with the following structure:
 
 ```json
 {
   "to": "examplemail@mail.com",
   "subject": "This is the subject of the email",
-  "body": "This is the body of the email",
-  "attachment": "This is the attachment of the email"
+  "body": "This is the body of the email"
 }
 ```
 
@@ -104,7 +111,6 @@ POST http://yourhost.com
   "to": "the email address of the recipient",
   "subject": "the subject of the email",
   "body": "the body of the email",
-  "attachment": "the attachment of the email"
 }
 ```
 
@@ -128,14 +134,6 @@ POST http://yourhost.com
 
 > If you get into the link of the type field, you will find a more detailed explanation of the error.
 
-## Things to bear in mind
-
-- The application is designed to be a simplified version of a real email sender, but in a real development environment, I do not recommend using it, really, this application is only for learning. so it does not have all the features that a real email sender has, but it has the basic features to understand how an email sender works.
-
-- If you want to modify the application, you can do it without any problem, the application is designed to be modified and to be used as a base for a more complex application.
-
-- The structure of the application is not based on any architecture, so you can use the architecture that you want, and you can modify the application to use the architecture that you want.
-
 ## Final step
 
-- That's all, this service is probably very simple, but it is designed to be simple, so you can understand how an email sender works, so thank you for taking the time to review and test my service, have a great time.
+- That's all, this service is probably very simple, but it is designed to be simple, so you can understand how an email sender works.
