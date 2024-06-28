@@ -44,13 +44,13 @@ EmailSenderService is an application designed to emulate the sending of emails i
 
 **For convenience, don't use your personal account, you could create a recipient account or use one in which you do not have sensitive or very personal data.**
 
-MailServer: This is already configured by default to use the gmail server, so you don't have to modify this field.
+>MailServer: This is already configured by default to use the gmail server, so you don't have to modify this field.
 
-MailPort: This is already configured by default to use the port 587, so you don't have to modify this field.
+>MailPort: This is already configured by default to use the port 587, so you don't have to modify this field.
 
-Email: This is the email address that will be used to send the emails, so you will need to modify this field with your email address.
+>Email: This is the email address that will be used to send the emails, so you will need to modify this field with your email address.
 
-Password: This is the password of the email address that will be used to send the emails, so you will need to modify this field with your email password.
+>Password: This is the password of the email address that will be used to send the emails, so you will need to modify this field with your email password.
 
 - **Important:** You will need to config your account to allow less secure apps to access your account, follow this steps to do it: [Allow less secure apps to access your account](#allow-less-secure-apps-to-access-your-acount)
 
