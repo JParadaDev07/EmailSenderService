@@ -11,16 +11,10 @@ using Microsoft.AspNetCore.Mvc;
 namespace EmailSender.api.Controllers.Common;
 
 [Route("api")]
-public class EmailController : ApiController
+public class EmailController(ISender mediator, IMapper mapper) : ApiController
 {
-    private readonly ISender _mediator;
-    private readonly IMapper _mapper;
-
-    public EmailController(ISender mediator, IMapper mapper)
-    {
-        _mediator = mediator;
-        _mapper = mapper;
-    }
+    private readonly ISender _mediator = mediator;
+    private readonly IMapper _mapper = mapper;
 
     [HttpPost("send-email")]
     public async Task<IActionResult> SendEmail([FromBody] EmailSenderRequest request)

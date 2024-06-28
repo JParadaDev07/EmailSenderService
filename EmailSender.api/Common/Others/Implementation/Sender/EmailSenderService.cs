@@ -6,14 +6,9 @@ using Microsoft.Extensions.Options;
 
 namespace EmailSender.api.Common.Others.Implementation.Sender;
 
-public class EmailSenderService : IEmailSender
+public class EmailSenderService(IOptions<EmailSettings> emailSettings) : IEmailSender
 {
-    private readonly EmailSettings _emailSettings;
-
-    public EmailSenderService(IOptions<EmailSettings> emailSettings)
-    {
-        _emailSettings = emailSettings.Value;
-    }
+    private readonly EmailSettings _emailSettings = emailSettings.Value;
 
     public async Task SendEmailAsync(string To, string Subject, string Body)
     {

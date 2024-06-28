@@ -7,15 +7,10 @@ using MediatR;
 
 namespace EmailSender.api.Email.Commands;
 
-public class MailSenderCommandHandler :
+public class MailSenderCommandHandler(IEmailSender emailSender) :
     IRequestHandler<EmailSenderCommand, ErrorOr<EmailSenderResult>>
 {
-    private readonly IEmailSender _emailSender;
-
-    public MailSenderCommandHandler(IEmailSender emailSender)
-    {
-        _emailSender = emailSender;
-    }
+    private readonly IEmailSender _emailSender = emailSender;
 
     public async Task<ErrorOr<EmailSenderResult>> Handle(
         EmailSenderCommand request,
